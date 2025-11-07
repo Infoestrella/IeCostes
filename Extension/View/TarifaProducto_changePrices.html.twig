@@ -1,11 +1,9 @@
 <div class="col">
     {{ trans('real-cost') }}
     <div class="input-group">
-        <div class="input-group-prepend">
-            <span class="input-group-text">
+        <span class="input-group-text">
                 <i class="{{ currencyIcon }}"></i>
             </span>
-        </div>
-        <input type="number" name="realcost" value="{{ item.variant.realcost }}" step="any" class="form-control prices-tab-realcost text-right" readonly=""/>
+        <input type="number" name="realcost" value="{{ item.variant.realcost }}" step="any" class="form-control prices-tab-realcost text-end" readonly=""/>
     </div>
 </div>
